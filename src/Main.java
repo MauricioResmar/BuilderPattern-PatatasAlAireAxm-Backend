@@ -8,6 +8,8 @@ public class Main {
         //Definimos los atributos de la Comanda como vacios:
 
         String nombre = "Sin-Name";
+        int opcion;
+
         String patatas = "Sin-Patatas";
         String proteinas = "Sin-Proteinas";
         String salsas = "Sin-Salsas";
@@ -23,20 +25,39 @@ public class Main {
 
             System.out.println("\nPara iniciar, cuentanos como te llamas?: ");
             nombre = scanner.next();
-            System.out.println("\nBien " + nombre + ", Ahora elige tus ingredientes.");
 
-         // Muestra menu y construye la comanda
+            do {
+            System.out.println("\nBien " + nombre + ", selecciona la opcion que consideres a continuacion:");
 
-            ComandaMenu comandaMenu = new ComandaMenu();
+            System.out.println("\nIngresa: 1. Para Patatas armadas de la casa");
+            System.out.println("Ingresa: 2. Para crear tus Patatas personalizadas, paso a paso!");
 
-            patatas = comandaMenu.Paso1Patatas(); // El metodo retorna el tipo de Papas deseadas por el usuario...
-            proteinas = comandaMenu.Paso2Proteinas(); // El metodo retorna el tipo de Proteinas deseadas por el usuario...
-            salsas = comandaMenu.Paso3Salsas(); // El metodo retorna el tipo de Salsas deseadas por el usuario..
-            toppings = comandaMenu.Paso4Toppings(); // El metodo retorna el tipo de Toppings deseados por el usuario..
+                opcion = scanner.nextInt();
 
-         //Imprime la Comanda
+                if (opcion == 1) {
 
-            System.out.println(nombre + " " + patatas + " " + proteinas + " " + salsas + " "+ toppings);
+                System.out.println("Carta Patatas");
 
+                } else if (opcion == 2) {
+
+                System.out.println("\nBien " + nombre + ", Ahora elige tus ingredientes.");
+
+                // Muestra menu y construye la comanda
+
+                ComandaMenu comandaMenu = new ComandaMenu();
+
+                patatas = comandaMenu.Paso1Patatas(); // El metodo retorna el tipo de Papas deseadas por el usuario...
+                proteinas = comandaMenu.Paso2Proteinas(); // El metodo retorna el tipo de Proteinas deseadas por el usuario...
+                salsas = comandaMenu.Paso3Salsas(); // El metodo retorna el tipo de Salsas deseadas por el usuario..
+                toppings = comandaMenu.Paso4Toppings(); // El metodo retorna el tipo de Toppings deseados por el usuario..
+
+                //Imprime la Comanda
+
+                System.out.println(nombre + " " + patatas + " " + proteinas + " " + salsas + " "+ toppings);
+
+                } else {
+                System.out.println("Selecciona una opcion disponible!");
+                }
+            } while (opcion != 1 && opcion != 2);
     }
 }

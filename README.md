@@ -18,17 +18,17 @@ objeto y una clase concreta (Concrete Builder) para implementar esos métodos y 
 
 **Características Principales.**
 
-    **Construcción Paso a Paso:** Permite la construcción de un objeto complejo paso a paso, delegando la 
-    responsabilidad de cada paso a un conjunto de métodos en el Builder.
+**Construcción Paso a Paso:** Permite la construcción de un objeto complejo paso a paso, delegando la 
+responsabilidad de cada paso a un conjunto de métodos en el Builder.
 
-    **Interfaz Abstracta (Builder):** Define los métodos necesarios para construir cada parte del objeto.
-    Puede incluir métodos como construirParteA, construirParteB, y un método final build para obtener
-    el objeto completo.
+**Interfaz Abstracta (Builder):** Define los métodos necesarios para construir cada parte del objeto.
+Puede incluir métodos como construirParteA, construirParteB, y un método final build para obtener
+el objeto completo.
 
-    **Builder Concreto:** Implementa la interfaz Builder y proporciona la lógica específica para construir
-    el objeto. Puede haber múltiples Builder concretos que construyen objetos con variaciones específicas.
+**Builder Concreto:** Implementa la interfaz Builder y proporciona la lógica específica para construir
+el objeto. Puede haber múltiples Builder concretos que construyen objetos con variaciones específicas.
 
-    **Director:** Coordina el proceso de construcción utilizando un objeto Builder. Se encarga de llamar a los
-    métodos del Builder en el orden correcto para obtener el objeto final.
+**Director:** Coordina el proceso de construcción utilizando un objeto Builder. Se encarga de llamar a los
+métodos del Builder en el orden correcto para obtener el objeto final.
 
-    --Posteriormente, agregaré aquí otros detalles, así como el respectivo diagrama de Clases UML con el esquema  del proyecto...
+--Posteriormente, agregaré aquí otros detalles, así como el respectivo diagrama de Clases UML con el esquema  del proyecto...
