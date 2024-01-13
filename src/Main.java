@@ -8,9 +8,8 @@ public class Main {
         //Definimos los atributos de la Comanda como vacios:
 
         String nombreUser = "Sin-Name";
-        int opcion;
-
-        String nombrePlato = "Sin-plato";
+        int opcionTipoMenu;
+        String cartaPatatas = null;
 
         String patatas = "Sin-Patatas";
         String proteinas = "Sin-Proteinas";
@@ -34,20 +33,17 @@ public class Main {
             System.out.println("\nIngresa: 1. Para Patatas Armadas de la Casa");
             System.out.println("Ingresa: 2. Para Crear tus propias Patatas Personalizadas, paso a paso!");
 
-                opcion = scanner.nextInt();
+                opcionTipoMenu = scanner.nextInt();
 
-                if (opcion == 1) {
+                if (opcionTipoMenu == 1) {
 
-                System.out.println("Hola " +nombreUser + ", bienvenid@ a nuestra Carta de Patatas Axm!");
-                    System.out.println("\nSelecciona a continacion el plato que desees\n Nuestras Recomendadas son:");
+                    System.out.println("Hola "  + nombreUser + " bienvenid@ a nuestra Carta de Patatas Axm!");
 
-                            System.out.println("\n1). - AZTECA:");
-                            System.out.println("\nPatatas de tu eleccion acompanada de cubo de Pollo a la plancha, Salsa Chipotle (Picante suave), Sour Cream, Guacamole Fresco y Pico de Gallo.");
+                    ComandaMenuCarta comandaMenuCarta = new ComandaMenuCarta();
+                    cartaPatatas = comandaMenuCarta.getCartaPatatas();
+                    System.out.println(cartaPatatas);
 
-                            System.out.println("\n2). - NUESTRA TIERRA:");
-                            System.out.println("\nPatatas de tu eleccion acompanada de Cubo de Chicharron crocante, Chorizo de cerdo, salsa showy, Ajo (Delicios combinacion mayo, especias, y un toque de ajo), Trocitos de Platano maduro y huevo frito.");
-
-                } else if (opcion == 2) {
+                } else if (opcionTipoMenu == 2) {
 
                 System.out.println("\nBien " + nombreUser + ", Ahora elige tus ingredientes.");
 
@@ -67,6 +63,6 @@ public class Main {
                 } else {
                 System.out.println("Selecciona una opcion disponible!");
                 }
-            } while (opcion != 1 && opcion != 2);
+            } while (opcionTipoMenu != 1 && opcionTipoMenu != 2);
     }
 }
