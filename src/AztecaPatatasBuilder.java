@@ -1,4 +1,4 @@
-//Implementamos el Builder (Subclase) concreto #1, para la construcción del objeto Patatas (Azteca), accediendo a los respectivos metodos Setter de la Clase POJO Patatas
+//En esta ocasión, implemento el Builder (Subclase) concreto #1, para la construcción del objeto Patatas Tipo:(Azteca), accediendo a los respectivos metodos Setter de la Clase POJO: Patatas y a petición de la Clase Director.
 
 public class AztecaPatatasBuilder extends PatatasBuilder {
     @Override
