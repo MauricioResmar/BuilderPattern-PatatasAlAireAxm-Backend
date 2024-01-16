@@ -41,7 +41,24 @@ public class Main {
 
                     ComandaMenuCarta comandaMenuCarta = new ComandaMenuCarta();
                     cartaPatatas = comandaMenuCarta.getCartaPatatas();
-                    System.out.println(cartaPatatas);
+
+                    //Una vez conocemos el constructor concreto, se lo entregamos como parámetro a la director Class PatatasDirector
+                    PatatasDirector patatasDirector = new PatatasDirector();
+
+                    switch (cartaPatatas){
+                        case "AZTECA":
+                        patatasDirector.setBuilder(new AztecaPatatasBuilder());
+                        buildPatatas(patatasDirector);
+                        break;
+
+                        /*case "NUESTRA TIERRA":
+                        patatasDirector.setBuilder(new NuestraTierraPatatasBuilder());
+                        patatasDirector.buildPatatas();
+                        break;*/
+
+                    }
+
+                    System.out.println("Construccion del objeto: " + cartaPatatas + " fue satisfactorio y sera atendido lo mas pronto posible, gracias!");
 
                 } else if (opcionTipoMenu == 2) {
 
@@ -64,5 +81,9 @@ public class Main {
                 System.out.println("Selecciona una opcion disponible!");
                 }
             } while (opcionTipoMenu != 1 && opcionTipoMenu != 2);
+    }
+    private static void buildPatatas(PatatasDirector patatasDirector){
+        Patatas patatas = patatasDirector.buildPatatas();
+        patatas.print();
     }
 }

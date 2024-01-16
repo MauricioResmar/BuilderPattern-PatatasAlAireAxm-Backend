@@ -21,7 +21,7 @@ public class PatatasDirector {
 
     //Generamos EL metodo buildPatatas el cual retornara un objeto del tipo de la Clase POJO Patatas
 
-    public Patatas buildBurguer() {
+    public Patatas buildPatatas() {
     /* Invocamos a continuación los metodos abstractos creados en el constructor (Builder) Abtracto
        PatatasBuilder y retornamos el Objeto patatas de tipo Patatas mediante el metodo build() */
 

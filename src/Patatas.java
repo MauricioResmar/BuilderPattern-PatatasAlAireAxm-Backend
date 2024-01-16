@@ -44,11 +44,10 @@ public class Patatas {
 
     public void print() {
         System.out.println(
-            "Construccion de patatas finalizada! " + "\n" +
+            "Iniciando la construccion del objeto(), tipo Patatas solicitado..." + "\n" +
                     "Patatas: " + patatas +
                     " - Proteinas: " + proteinas +
                     " - Salsas: " + salsas +
                     " - Toppings: " + toppings);
-
     }
 }
