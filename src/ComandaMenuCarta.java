@@ -16,7 +16,7 @@ public class ComandaMenuCarta {
             System.out.println("\nPrecio (Cop): $18.800");
 
             System.out.println("\n2). - NUESTRA TIERRA:");
-            System.out.println("\nPatatas de tu eleccion acompanada de Cubo de Chicharron crocante, Chorizo de cerdo, salsa showy, \nAjo (Delicios combinacion mayo, especias, y un toque de ajo), Trocitos de Platano maduro y huevo frito.");
+            System.out.println("\nPatatas de tu eleccion acompanada de Cubo de Chicharron crocante, Chorizo de cerdo, salsa showy, \nAjo (Deliciosa combinacion mayo, especias, y un toque de ajo), Trocitos de Platano maduro y huevo frito.");
             System.out.println("\nPrecio (Cop): $20.100");
 
             System.out.println("\n3). - GRINGAS:");

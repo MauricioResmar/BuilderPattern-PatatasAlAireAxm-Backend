@@ -13,13 +13,13 @@ public class PatatasDirector {
     private PatatasBuilder patatasBuilder;
 
     /*
-     *  Creamos un metodo setBuilder al cual le entregamos la variable privada patatasBuilder
+     *   Creamos un metodo setBuilder al cual le entregamos la variable privada patatasBuilder
      *   para decirle que le asigne a éste el valor actual de la instancia, mediante this.
      *   actualizando así su valor al valor actual de la instancia.
     */
     public void setBuilder(PatatasBuilder patatasBuilder) {this.patatasBuilder = patatasBuilder;}
 
-    //Generamos EL metodo buildPatatas el cual retornara un objeto del tipo de la Clase POJO Patatas
+    //Generamos el metodo buildPatatas el cual retornara un objeto del tipo de la Clase POJO Patatas
 
     public Patatas buildPatatas() {
     /* Invocamos a continuación los metodos abstractos creados en el constructor (Builder) Abtracto

@@ -51,10 +51,10 @@ public class Main {
                         buildPatatas(patatasDirector);
                         break;
 
-                        /*case "NUESTRA TIERRA":
+                        case "NUESTRA TIERRA":
                         patatasDirector.setBuilder(new NuestraTierraPatatasBuilder());
-                        patatasDirector.buildPatatas();
-                        break;*/
+                        buildPatatas(patatasDirector);
+                        break;
 
                     }
 
