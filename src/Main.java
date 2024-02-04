@@ -56,6 +56,26 @@ public class Main {
                         buildPatatas(patatasDirector);
                         break;
 
+                        case "GRINGAS":
+                        patatasDirector.setBuilder(new GringasPatatasBuilder());
+                        buildPatatas(patatasDirector);
+                        break;
+
+                        case "CUBANAS":
+                        patatasDirector.setBuilder(new CubanasPatatasBuilder());
+                        buildPatatas(patatasDirector);
+                        break;
+
+                        case "PATATAS DUO":
+                        patatasDirector.setBuilder(new DuoPatatasBuilder());
+                        buildPatatas(patatasDirector);
+                        break;
+
+                        case "PATATAS KIDS":
+                        patatasDirector.setBuilder(new KidsPatatasBuilder());
+                        buildPatatas(patatasDirector);
+                        break;
+
                     }
 
                     System.out.println("Construccion del objeto: " + cartaPatatas + " fue satisfactorio y sera atendido lo mas pronto posible, gracias!");
