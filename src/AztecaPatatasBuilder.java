@@ -12,7 +12,7 @@ public class AztecaPatatasBuilder extends PatatasBuilder {
     }
 
     @Override
-    void buildSalsa( ) {
+    void buildSalsa() {
         patatas.setSalsas("Salsa Chipotle, Sour Cream, Guacamole fresco");
     }
 

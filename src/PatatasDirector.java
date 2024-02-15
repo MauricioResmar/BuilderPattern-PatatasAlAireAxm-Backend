@@ -32,4 +32,18 @@ public class PatatasDirector {
 
         return patatasBuilder.build();
     }
+
+    //Agregamos un nuevo metodo en nuestra Clase Director para hacer uso del CustomPatatasBuilder
+
+    /*public void buildPatatasCustom(PatatasBuilder patatasbuilder, String patatas, String proteinas, String salsas, String toppings) {
+    /* Invocamos a continuación los metodos abstractos creados en el constructor (Builder) Abtracto
+       PatatasBuilder y retornamos el Objeto patatas de tipo Patatas mediante el metodo build() */
+
+
+        //patatasbuilder.buildPatata(patatas);
+        //patatasbuilder.buildProteina(proteinas);
+        //patatasbuilder.buildSalsa(salsas);
+        //patatasbuilder.buildTopping(toppings);
+
+    //}
 }

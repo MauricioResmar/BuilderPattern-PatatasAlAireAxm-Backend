@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ComandaMenu {
-    String patatas;
+    String papas;
     String proteinas;
     String salsas;
     String toppings;
@@ -21,42 +21,42 @@ public class ComandaMenu {
 
         System.out.println("\nEscoge las Patatas que deseas, ingresando el numero: ");
 
-        patatas = scanner.next();
+        papas = scanner.next();
 
-        switch (patatas) {
+        switch (papas) {
             case "1":
-                patatas = "Francesa";
+                papas = "Francesa";
                 break;
 
             case "2":
-                patatas = "Rustica";
+                papas = "Rustica";
                 break;
 
             case "3":
-                patatas = "Rizada";
+                papas = "Rizada";
                 break;
 
             case "4":
-                patatas = "Criolla";
+                papas = "Criolla";
                 break;
 
             case "5":
-                patatas = "Bola";
+                papas = "Bola";
                 break;
 
             case "6":
-                patatas = "Smile";
+                papas = "Smile";
                 break;
 
             case "7":
-                patatas = "Crisper";
+                papas = "Crisper";
                 break;
 
             case "8":
-                patatas = "Crocantes de Yuca";
+                papas = "Crocantes de Yuca";
                 break;
         }
-        return this.patatas;
+        return this.papas;
     }
     public String Paso2Proteinas() {
         System.out.println("\nPaso 2 Seleccion de Proteinas: ");

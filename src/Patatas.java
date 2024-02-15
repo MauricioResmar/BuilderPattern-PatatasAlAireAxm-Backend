@@ -44,10 +44,18 @@ public class Patatas {
 
     public void print() {
         System.out.println(
-            "Iniciando la construccion del objeto(), tipo Patatas solicitado..." + "\n" +
-                    "Patatas: " + patatas +
-                    " - Proteinas: " + proteinas +
-                    " - Salsas: " + salsas +
-                    " - Toppings: " + toppings);
+                "Iniciando la construccion del objeto(), tipo Patatas solicitado..." + "\n" +
+                        "Patatas: " + patatas +
+                        " - Proteinas: " + proteinas +
+                        " - Salsas: " + salsas +
+                        " - Toppings: " + toppings);
+    }
+    public void printCustom() {
+        System.out.println(
+                "Iniciando la construccion del objeto(), tipo Patatas Custom, Paso a paso solicitado..." + "\n" +
+                        "Patatas seleccionadas: " + patatas +
+                        " - Proteinas seleccionadas: " + proteinas +
+                        " - Salsas seleccionadas: " + salsas +
+                        " - Toppings seleccionadas: " + toppings);
     }
 }
